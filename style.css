@@ -1,0 +1,327 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; 
+    color: #333333; 
+}
+
+/* Header styling */
+header, footer, .nav-links {
+    background-color: #5d5d5e;
+    color: white;
+}
+
+.header-top {
+    background-color: #0c0d0e;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top .left, .header-top .right {
+    display: flex;
+    align-items: center;
+}
+
+.header-top .left i, .header-top .center i, .header-top .right i {
+    margin-right: 8px;
+}
+
+.header-top .center {
+    text-align: center;
+    flex: 1;
+}
+
+.header-top .social-media a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.header-main {
+    text-align: right;
+    padding: 20px;
+    background-color: #212224;
+    color: white;
+    border-bottom: 3px solid #385c80;
+}
+
+.header-main h1 {
+    font-size: 3.3rem;
+    color: #eae6e6;
+    margin-right: 5vw;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+    letter-spacing: 1.5px; 
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+}
+
+.nav-links {
+    padding: 10px 0;
+    color: white;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-links ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links ul li a:hover {
+    color: #0066cc;
+}
+
+/* Slider styling */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5); /* Darken images for better clarity */
+}
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Black background for text */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.slide-text h2 {
+    font-size: 3rem; 
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.slide-text p {
+    font-size: 1.2rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Quote container styling */
+.quote-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    padding: 40px 20px;
+    border-left: 5px solid #1f3a93;
+    font-size: 1.8rem;
+    margin: 20px;
+    animation: fadeIn 2s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+/* Services and Benefits sections styling */
+.services, .benefits {
+    text-align: center;
+    padding: 50px;
+    background-color: #5c5858;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: #ffffff;
+    position: relative;
+    animation: fadeIn 2s ease-in-out; /* Add animation */
+}
+
+.services::before, .benefits::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, #004080 0%, #0066cc 100%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.services h2, .benefits h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #eae6e6; /* Light color for heading */
+}
+
+.service-container, .benefit-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-box, .benefit-box {
+    background-color: #444444; 
+    border: 1px solid #666666;
+    border-radius: 10px;
+    width: 220px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    color: #ffffff;
+    animation: fadeIn 2s ease-in-out; /* Add animation */
+}
+
+.service-box:hover, .benefit-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.service-box i, .benefit-box i {
+    font-size: 50px;
+    color: #90a2b4;
+    margin-bottom: 15px;
+}
+
+.service-box h3, .benefit-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #eae6e6; /* Light color for headings */
+}
+
+.service-box p, .benefit-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #eae6e6; /* Light color for text */
+}
+
+.hidden {
+    display: none;
+}
+
+#show-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #1f3a93;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#show-more-btn:hover {
+    background-color: #14274e;
+}
+
+/* Footer styling */
+footer {
+    border-bottom: 3px solid #385c80;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #0066cc;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #0066cc;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-top, .header-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .slide-text h2 {
+        font-size: 2rem;
+    }
+
+    .service-box, .benefit-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .quote-container {
+        font-size: 1.5rem; 
+        padding: 5% 10%;
+        width: 90%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-container {
+        font-size: 1.2rem; 
+        padding: 6% 12%;
+        width: 95%;
+    }
+}
