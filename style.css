@@ -1,4 +1,3 @@
-/* Reset and basic styling */
 * {
     margin: 0;
     padding: 0;
@@ -7,18 +6,17 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; 
+    background-color: #f9f9f9; 
     color: #333333; 
 }
 
-/* Header styling */
 header, footer, .nav-links {
-    background-color: #5d5d5e;
+    background-color: #333333; /* Dark Grey */
     color: white;
 }
 
 .header-top {
-    background-color: #0c0d0e;
+    background-color: #1a1a1a; /* Slightly darker grey */
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -47,24 +45,40 @@ header, footer, .nav-links {
     font-size: 20px;
 }
 
+.header-container {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Space between the logo and text */
+    padding: 20px;
+    background-color: #444444; /* Medium Grey */
+    border-bottom: 3px solid #2c3e50; /* Darker Blue Grey */
+}
+
+.logo img {
+    width: 80px;
+    height: 80px; /* Ensure the height and width are equal */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image fits within the circle */
+    margin-right: 15px; /* Space between the logo and text */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Adds a subtle shadow for depth */
+}
+
 .header-main {
     text-align: right;
-    padding: 20px;
-    background-color: #212224;
-    color: white;
-    border-bottom: 3px solid #385c80;
+    flex-grow: 1; /* Text takes up the remaining space */
 }
 
 .header-main h1 {
     font-size: 3.3rem;
-    color: #eae6e6;
-    margin-right: 5vw;
+    color: #ecf0f1; /* Light Grey */
+    margin: 0; /* Removes default margin */
     font-family: 'Montserrat', sans-serif; 
     font-weight: 700;
     letter-spacing: 1.5px; 
     text-transform: uppercase; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
 }
+
 
 .nav-links {
     padding: 10px 0;
@@ -92,10 +106,9 @@ header, footer, .nav-links {
 }
 
 .nav-links ul li a:hover {
-    color: #0066cc;
+    color: #3498db; /* Light Blue */
 }
 
-/* Slider styling */
 .slider {
     position: relative;
     width: 100%;
@@ -107,19 +120,19 @@ header, footer, .nav-links {
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
 }
 
 .slide.active {
-    opacity: 0;
+    opacity: 1;
 }
 
 .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.3); 
+    filter: brightness(0.4); 
 }
 
 .slide-text {
@@ -129,7 +142,7 @@ header, footer, .nav-links {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.6); /* Black background for text */
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
@@ -146,13 +159,12 @@ header, footer, .nav-links {
     animation: fadeIn 2s ease-in-out;
 }
 
-/* Quote container styling */
 .quote-container {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: rgba(0, 0, 0, 0.9); 
     color: white;
     padding: 40px 20px;
-    border-left: 5px solid #1f3a93;
+    border-left: 5px solid #1abc9c; /* Teal */
     font-size: 1.8rem;
     margin: 20px;
     animation: fadeIn 2s ease-in-out;
@@ -161,18 +173,17 @@ header, footer, .nav-links {
     font-style: italic;
 }
 
-/* Services and Benefits sections styling */
 .services, .benefits {
     text-align: center;
     padding: 50px;
-    background-color: #5c5858;
+    background-color: #ffffff; /* White */
     margin: 20px auto;
     width: 80%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    color: #ffffff;
+    color: #333333; /* Dark Grey */
     position: relative;
-    animation: fadeIn 2s ease-in-out; /* Add animation */
+    animation: fadeIn 2s ease-in-out; 
 }
 
 .services::before, .benefits::before {
@@ -182,7 +193,7 @@ header, footer, .nav-links {
     left: 0;
     width: 100%;
     height: 10px;
-    background: linear-gradient(90deg, #004080 0%, #0066cc 100%);
+    background: linear-gradient(90deg, #3498db 0%, #2ecc71 100%); /* Blue to Green Gradient */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -190,7 +201,7 @@ header, footer, .nav-links {
 .services h2, .benefits h2 {
     margin-bottom: 40px;
     font-size: 2rem;
-    color: #eae6e6; /* Light color for heading */
+    color: #2c3e50; /* Dark Blue Grey */
 }
 
 .service-container, .benefit-container {
@@ -201,16 +212,16 @@ header, footer, .nav-links {
 }
 
 .service-box, .benefit-box {
-    background-color: #444444; 
-    border: 1px solid #666666;
+    background-color: #f5f5f5; /* Light Grey */
+    border: 1px solid #dddddd; /* Light Grey Border */
     border-radius: 10px;
     width: 220px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
-    color: #ffffff;
-    animation: fadeIn 2s ease-in-out; /* Add animation */
+    color: #333333; /* Dark Grey */
+    animation: fadeIn 2s ease-in-out; 
 }
 
 .service-box:hover, .benefit-box:hover {
@@ -220,20 +231,20 @@ header, footer, .nav-links {
 
 .service-box i, .benefit-box i {
     font-size: 50px;
-    color: #90a2b4;
+    color: #3498db; /* Light Blue */
     margin-bottom: 15px;
 }
 
 .service-box h3, .benefit-box h3 {
     font-size: 1.2rem;
     margin-bottom: 15px;
-    color: #eae6e6; /* Light color for headings */
+    color: #2c3e50; /* Dark Blue Grey */
 }
 
 .service-box p, .benefit-box p {
     font-size: 1rem;
     line-height: 1.5;
-    color: #eae6e6; /* Light color for text */
+    color: #666666; /* Medium Grey */
 }
 
 .hidden {
@@ -246,23 +257,22 @@ header, footer, .nav-links {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #1f3a93;
+    background-color: #1abc9c; /* Teal */
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 #show-more-btn:hover {
-    background-color: #14274e;
+    background-color: #16a085; /* Darker Teal */
 }
 
-/* Footer styling */
 footer {
-    border-bottom: 3px solid #385c80;
+    border-bottom: 3px solid #2c3e50; /* Dark Blue Grey */
     color: white;
     padding: 20px;
     text-align: center;
-    border-top: 5px solid #0066cc;
+    border-top: 5px solid #3498db; /* Light Blue */
 }
 
 footer p {
@@ -277,10 +287,9 @@ footer a {
 }
 
 footer a:hover {
-    color: #0066cc;
+    color: #3498db; /* Light Blue */
 }
 
-/* Keyframes for animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -290,7 +299,6 @@ footer a:hover {
     }
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     .header-top, .header-main {
         flex-direction: column;
