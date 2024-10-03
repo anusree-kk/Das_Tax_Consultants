@@ -15,7 +15,7 @@
 
     <header>
         <div class="header-top">
-            
+
             <div class="center">
                 <i class="fas fa-calendar-week"></i> Mon - Sat: 10am - 5pm
             </div>
@@ -33,6 +33,9 @@
             <div class="header-main">
                 <h1>D A S Tax Consultants</h1>
             </div>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
 
         <nav class="nav-links">
@@ -44,7 +47,7 @@
         </nav>
 
         <div class="slider">
-            <div class="slide active">
+            <div class="slide active-slide">
                 <img src="images/image1.jpg" alt="Tax Consultancy">
                 <div class="slide-text">
                     <h2>Need Tax Consultant?</h2>
@@ -151,7 +154,7 @@
             </div>
         </div>
     </section>
-    
+
 
     <section id="faq" class="faq">
         <h2>Frequently Asked Questions</h2>
@@ -209,14 +212,17 @@
                 <p><i class="fas fa-envelope"></i> officialdastaxconsultants@gmail.com</p>
                 <div class="social-media">
                     <a href="https://www.instagram.com/dastaxconsultants/"><i class="fab fa-instagram"> </i></a>
-                    <a href="https://www.linkedin.com/in/das-tax-consultants/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/das-tax-consultants/"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
         <p class="copyright">&copy; 2024 D A S Tax Consultants All rights reserved.</p>
     </footer>
 
+    <!-- JavaScript Section -->
     <script>
+        // Slider Functionality
         let slideIndex = 0;
         const slides = document.querySelectorAll('.slide');
         const showMoreBtn = document.getElementById('show-more-btn');
@@ -224,32 +230,49 @@
 
         function showSlides() {
             slides.forEach((slide) => {
-                slide.classList.remove('active-slide'); 
+                slide.classList.remove('active-slide');
             });
             slideIndex++;
             if (slideIndex > slides.length) {
-                slideIndex = 1;  
+                slideIndex = 1;
             }
-            slides[slideIndex - 1].classList.add('active-slide');  
-            setTimeout(showSlides, 5000); 
+            slides[slideIndex - 1].classList.add('active-slide');
+            setTimeout(showSlides, 5000); // Change slide every 5 seconds
         }
 
         showSlides();
 
+        // Show More Services Button
         showMoreBtn.addEventListener('click', () => {
             hiddenServices.forEach(service => {
-                service.classList.remove('hidden');  
+                service.classList.remove('hidden');
             });
-            showMoreBtn.style.display = 'none';  
+            showMoreBtn.style.display = 'none';
         });
 
+        // FAQ Toggle Functionality
         document.querySelectorAll('.faq-item').forEach(item => {
             item.addEventListener('click', () => {
-                const content = item.querySelector('p');
-                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                item.classList.toggle('active');
             });
         });
 
+        // Hamburger Menu Functionality
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close the navigation menu when a link is clicked (optional)
+        document.querySelectorAll('.nav-links ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
     </script>
 </body>
 
