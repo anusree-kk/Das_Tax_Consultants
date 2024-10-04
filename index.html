@@ -15,17 +15,16 @@
 
     <header>
         <div class="header-top">
-
             <div class="center">
                 <i class="fas fa-calendar-week"></i> Mon - Sat: 10am - 5pm
             </div>
             <div class="right social-media">
-                <a href="https://www.instagram.com/dastaxconsultants/" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/dastaxconsultants/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/das-tax-consultants/" target="_blank"><i
                         class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
+
         <div class="header-container">
             <div class="logo">
                 <img src="images/Logo.png" alt="DAS Tax Consultants">
@@ -33,7 +32,7 @@
             <div class="header-main">
                 <h1>D A S Tax Consultants</h1>
             </div>
-            <div class="hamburger-menu">
+            <div class="hamburger-menu" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
@@ -42,6 +41,7 @@
             <ul>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#why-choose-us">Benefits</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
@@ -53,6 +53,7 @@
                     <h2>Need Tax Consultant?</h2>
                 </div>
             </div>
+
             <div class="slide">
                 <img src="images/image2.jpg" alt="Tax Experts">
                 <div class="slide-text">
@@ -155,7 +156,6 @@
         </div>
     </section>
 
-
     <section id="faq" class="faq">
         <h2>Frequently Asked Questions</h2>
         <div class="faq-container">
@@ -220,9 +220,7 @@
         <p class="copyright">&copy; 2024 D A S Tax Consultants All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript Section -->
     <script>
-        // Slider Functionality
         let slideIndex = 0;
         const slides = document.querySelectorAll('.slide');
         const showMoreBtn = document.getElementById('show-more-btn');
@@ -237,12 +235,11 @@
                 slideIndex = 1;
             }
             slides[slideIndex - 1].classList.add('active-slide');
-            setTimeout(showSlides, 5000); // Change slide every 5 seconds
+            setTimeout(showSlides, 5000); 
         }
 
         showSlides();
 
-        // Show More Services Button
         showMoreBtn.addEventListener('click', () => {
             hiddenServices.forEach(service => {
                 service.classList.remove('hidden');
@@ -250,27 +247,37 @@
             showMoreBtn.style.display = 'none';
         });
 
-        // FAQ Toggle Functionality
         document.querySelectorAll('.faq-item').forEach(item => {
             item.addEventListener('click', () => {
                 item.classList.toggle('active');
             });
         });
 
-        // Hamburger Menu Functionality
         const hamburger = document.querySelector('.hamburger-menu');
         const navLinks = document.querySelector('.nav-links');
 
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             hamburger.classList.toggle('active');
+
+            const icon = hamburger.querySelector('i');
+            if (hamburger.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
         });
 
-        // Close the navigation menu when a link is clicked (optional)
         document.querySelectorAll('.nav-links ul li a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
                 hamburger.classList.remove('active');
+
+                const icon = hamburger.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
             });
         });
     </script>
