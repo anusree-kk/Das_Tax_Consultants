@@ -15,10 +15,13 @@
 
     <header>
         <div class="header-top">
+            <i class="fas fa-phone" ></i>- (+91) 9497177510
+
             <div class="center">
                 <i class="fas fa-calendar-week"></i> Mon - Sat: 10am - 5pm
             </div>
-            <div class="right social-media">
+            <t class="right social-media">
+                <p><b> FOLLOW US</b></p>
                 <a href="https://www.instagram.com/dastaxconsultants/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/das-tax-consultants/" target="_blank"><i
                         class="fab fa-linkedin-in"></i></a>
@@ -66,7 +69,7 @@
             <div class="whatsapp-position">
                 <a href="https://wa.me/919497177510" class="whatsapp-icon" target="_blank">
                     <i class="fab fa-whatsapp"></i>
-                    <span>WhatsApp</span>
+                    <span>Consult Now</span>
                 </a>
             </div>
         </div>
@@ -77,51 +80,51 @@
         <h2>Our Services</h2>
         <div class="service-container">
             <div class="service-box">
-                <i class="fas fa-file-invoice-dollar"></i>
+                <img src="images/image3.jpg" alt="Tax Experts">
                 <h3>Tax Filing Expert</h3>
             </div>
             <div class="service-box">
-                <i class="fas fa-file-signature"></i>
+                <img src="images/image4.jpg" alt="Tax Experts">
                 <h3>GST Registration & Filing</h3>
             </div>
             <div class="service-box">
-                <i class="fas fa-file-signature"></i>
+                <img src="images/image5.jpg" alt="Tax Experts">
                 <h3>TDS Correction & Return</h3>
             </div>
             <div class="service-box">
-                <i class="fas fa-book"></i>
+                <img src="images/image6.jpg" alt="Tax Experts">
                 <h3>ESI Payment</h3>
             </div>
             <div class="service-box hidden">
-                <i class="fas fa-building"></i>
+                <img src="images/image7.jpg" alt="Tax Experts">
                 <h3>Company Formation & Registration</h3>
             </div>
             <div class="service-box hidden">
-                <i class="fas fa-globe"></i>
+                <img src="images/image8.jpg" alt="Tax Experts">
                 <h3>LLP Formation</h3>
             </div>
             <div class="service-box hidden">
-                <i class="fas fa-calendar-check"></i>
+                <img src="images/image9.jpg" alt="Tax Experts">
                 <h3>Partnership Deed</h3>
             </div>
             <div class="service-box hidden">
-                <i class="fas fa-calendar-check"></i>
+                <img src="images/image10.jpg" alt="Tax Experts">
                 <h3>Rent Agreement</h3>
             </div>
             <div class="service-box hidden">
-                <i class="fas fa-calendar-check"></i>
+                <img src="images/image11.jpg" alt="Tax Experts">
                 <h3>MSME Registration</h3>
             </div>
             <div class="service-box hidden">
-                <i class="fas fa-calendar-check"></i>
+                <img src="images/image12.jpg" alt="Tax Experts">
                 <h3>Accounting Management & Balance Sheet Finalization</h3>
             </div>
             <div class="service-box hidden">
-                <i class="fas fa-calendar-check"></i>
+                <img src="images/image13.jpg" alt="Tax Experts">
                 <h3>PF Activation & Withdrawal</h3>
             </div>
             <div class="service-box hidden">
-                <i class="fas fa-shield-alt"></i>
+                <img src="images/image14.jpg" alt="Tax Experts">
                 <h3>All Types of Loans</h3>
             </div>
         </div>
@@ -134,23 +137,23 @@
             <div class="reason-container">
                 <div class="reason-box">
                     <i class="fa fa-star"></i>
-                    <h3>Expert Team</h3>
-                    <p>Our team consists of experienced professionals dedicated to providing high-quality services.</p>
+                    <h3>Experienced Consultants</h3>
+                    <p>Since 2018, our expert tax consultants have been helping individuals and businesses navigate complex tax landscapes with confidence.</p>
                 </div>
                 <div class="reason-box">
                     <i class="fa fa-thumbs-up"></i>
                     <h3>Customer Satisfaction</h3>
-                    <p>We prioritize customer satisfaction and strive to exceed expectations with every project.</p>
+                    <p>We prioritize client satisfaction, ensuring personalized service that exceeds expectations in every tax consultation.</p>
                 </div>
                 <div class="reason-box">
                     <i class="fa fa-clock"></i>
-                    <h3>Timely Delivery</h3>
-                    <p>We ensure that all projects are completed on time without compromising on quality.</p>
+                    <h3>Timely Filing</h3>
+                    <p>We guarantee timely tax filings, ensuring you meet all deadlines without compromising on accuracy.</p>
                 </div>
                 <div class="reason-box">
                     <i class="fa fa-cogs"></i>
-                    <h3>Innovative Solutions</h3>
-                    <p>We use the latest technology and techniques to deliver innovative solutions tailored to your needs.</p>
+                    <h3>Expert Guidance</h3>
+                    <p>We leverage our extensive knowledge and experience to provide innovative tax strategies tailored to your specific needs.</p>
                 </div>
             </div>
         </div>
@@ -235,17 +238,19 @@
                 slideIndex = 1;
             }
             slides[slideIndex - 1].classList.add('active-slide');
-            setTimeout(showSlides, 5000); 
+            setTimeout(showSlides, 5000);
         }
 
         showSlides();
 
-        showMoreBtn.addEventListener('click', () => {
-            hiddenServices.forEach(service => {
-                service.classList.remove('hidden');
+        if (showMoreBtn) { // Check if the button exists
+            showMoreBtn.addEventListener('click', () => {
+                hiddenServices.forEach(service => {
+                    service.classList.remove('hidden');
+                });
+                showMoreBtn.style.display = 'none';
             });
-            showMoreBtn.style.display = 'none';
-        });
+        }
 
         document.querySelectorAll('.faq-item').forEach(item => {
             item.addEventListener('click', () => {
