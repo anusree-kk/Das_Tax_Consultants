@@ -33,6 +33,11 @@ footer,
     align-items: center;
 }
 
+.header-top,
+.header-container {
+    transition: all 0.3s ease;
+}
+
 .header-top .center i,
 .header-top .right i {
     margin-right: 6px;
@@ -97,7 +102,6 @@ footer,
 }
 
 .hamburger-menu {
-    display: none;
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -106,7 +110,6 @@ footer,
     color: #ecf0f1;
     width: 30px;
     height: 30px;
-    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -545,15 +548,15 @@ footer .social-media a i {
         font-size: 2rem;
     }
 
-    .hamburger-menu {
+    .hamburger-menu i {
         display: flex;
     }
 
     .nav-links {
         position: absolute;
-        top: 100%;
-        right: 10px;
-        width: auto;
+        top: 37%;
+        right: 2%;
+        width: 17%;
         display: none;
         padding: 10px 20px;
         z-index: 999;
@@ -627,9 +630,15 @@ footer .social-media a i {
 
 @media (max-width: 425px) {
     .nav-links {
-        top: 30%;
+        display: none;
+        top: 22%;
+        right: 4%;
+        width: 24%;
+        padding: 6px 6px;
     }
-
+    .nav-links ul li a {
+        font-size: 0.5rem;
+    }
     .services h2,
     .why-choose-us h2,
     .faq h2 {
@@ -664,15 +673,14 @@ footer .social-media a i {
         font-size: 1.25rem;
     }
 
-    .hamburger-menu {
+    .hamburger-menu i{
         width: 25px;
         height: 25px;
     }
-
-    .nav-links ul li {
-        margin: 10px 0;
-        text-align: right;
-        margin-right: 20px;
+    .hamburger-menu {
+        bottom: 0px;
+        right: 6px;
+        font-size: 1.0rem;
     }
 
     .slider {
@@ -768,21 +776,14 @@ footer .social-media a i {
     }
 
     .whatsapp-icon i {
-        font-size: 35px;
-    }
-
-    .whatsapp-icon span {
-        display: none;
+        font-size: 54px;
     }
 
     .whatsapp-position {
-        top: 50%;
-        right: 10px;
-        text-align: center;
+        right: 12px;
+        bottom: 4%;
     }
-}
-
-.header-top,
-.header-container {
-    transition: all 0.3s ease;
+    .header-top .center {
+        text-align: right;
+    }
 }
