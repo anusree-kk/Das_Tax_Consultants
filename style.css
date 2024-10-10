@@ -25,7 +25,7 @@ footer,
     justify-content: space-between;
     align-items: center;
     font-size: 0.9rem;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 .header-top .right {
@@ -54,14 +54,24 @@ footer,
 
 .header-top .social-media a {
     margin-left: 10px;
-    color: #763240;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
+.header-top .social-media a.instagram-icon {
+    background: linear-gradient(45deg, #F56040, #E1306C, #405DE6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.header-top .social-media a.linkedin-icon {
+    color: #0077B5;
+}
+
 .header-top .social-media a:hover {
-    color: #3498db;
+    color: inherit;
 }
 
 .header-container {
@@ -72,7 +82,7 @@ footer,
     background: linear-gradient(135deg, #200917, #763240);
     border-bottom: 3px solid #1a1a1a;
     position: relative;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 .logo img {
@@ -82,7 +92,7 @@ footer,
     object-fit: cover;
     margin-right: 15px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
-    transition: width 0.3s ease, height 0.3s ease; 
+    transition: width 0.3s ease, height 0.3s ease;
 }
 
 .header-main {
@@ -270,12 +280,12 @@ footer,
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .service-box img {
     width: 100%;
-    height: 200px; 
+    height: 200px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -454,15 +464,25 @@ footer p {
 
 footer .social-media a {
     margin: 0 10px;
-    color: white;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
+footer .social-media a.instagram-icon {
+    background: linear-gradient(45deg, #F56040, #E1306C, #405DE6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer .social-media a.linkedin-icon {
+    color: #0077B5;
+}
+
 footer .social-media a:hover {
     color: #3498db;
 }
+
 
 .header-top.fixed,
 .header-container.fixed {
@@ -472,15 +492,15 @@ footer .social-media a:hover {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background: rgba(255, 255, 255, 0.95); 
+    background: rgba(255, 255, 255, 0.95);
 }
 
 .header-container.fixed {
-    background: rgba(32, 9, 23, 0.95); 
+    background: rgba(32, 9, 23, 0.95);
 }
 
 .header-top.fixed {
-    color: #763240; 
+    color: #763240;
 }
 
 img {
@@ -497,6 +517,7 @@ img {
     margin-right: 15px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }
+
 .slider img {
     width: 100%;
     height: 100%;
@@ -505,12 +526,12 @@ img {
 
 .service-box img {
     width: 100%;
-    height: 200px; 
+    height: 200px;
     object-fit: fill;
 }
 
 footer .social-media a i {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 }
 
 @media (max-width: 1024px) {
@@ -636,9 +657,11 @@ footer .social-media a i {
         width: 14%;
         padding: 6px 6px;
     }
+
     .nav-links ul li a {
         font-size: 0.5rem;
     }
+
     .services h2,
     .why-choose-us h2,
     .faq h2 {
@@ -673,10 +696,11 @@ footer .social-media a i {
         font-size: 1.25rem;
     }
 
-    .hamburger-menu i{
+    .hamburger-menu i {
         width: 25px;
         height: 25px;
     }
+
     .hamburger-menu {
         bottom: 0px;
         right: 6px;
@@ -783,6 +807,7 @@ footer .social-media a i {
         right: 12px;
         bottom: 4%;
     }
+
     .header-top .center {
         text-align: right;
     }
