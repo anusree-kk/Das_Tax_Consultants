@@ -6,225 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D A S Tax Consultancy Services</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;600&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
+    <div id="preloader"></div>
 
-    <header>
-        <div class="header-top">
-            <i class="fas fa-phone"></i> (+91) 9497177510
+    <div class="content-wrapper">
+        <header class="animate-on-load" data-aos="fade-down" data-aos-delay="100">
+            <div class="header-top">
+                <i class="fas fa-phone"></i> (+91) 9497177510
 
-            <div class="center">
-                <i class="fas fa-calendar-week"></i> Mon - Sat: 10am - 5pm
-            </div>
-
-            <div class="right social-media">
-                <p><b> FOLLOW US</b></p>
-                <a href="https://www.instagram.com/dastaxconsultants/" target="_blank" class="instagram-icon">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/das-tax-consultants/" target="_blank" class="linkedin-icon">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </div>
-        </div>
-
-        </div>
-
-        <div class="header-container">
-            <div class="logo">
-                <img src="images/Logo.png" alt="DAS Tax Consultants">
-            </div>
-            <div class="header-main">
-                <h1>D A S Tax Consultants</h1>
-            </div>
-            <div class="hamburger-menu" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-
-        <nav class="nav-links">
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#why-choose-us">Benefits</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-
-        <div class="slider">
-            <div class="slide active-slide">
-                <img src="images/image1.jpg" alt="Tax Consultancy">
-                <div class="slide-text">
-                    <h2>Need Tax Consultant?</h2>
+                <div class="center">
+                    <i class="fas fa-calendar-week"></i> Mon - Sat: 10am - 5pm
                 </div>
-            </div>
 
-            <div class="slide">
-                <img src="images/image2.jpg" alt="Tax Experts">
-                <div class="slide-text">
-                    <h2>Our Tax Experts are Here!</h2>
-                    <p>Don’t let a lack of knowledge result in a tax blunder.<br>
-                        Take control of your taxes with DAS Tax Consultancy Services.</p>
-                </div>
-            </div>
-
-            <div class="whatsapp-position">
-                <a href="https://wa.me/919497177510" class="whatsapp-icon" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>Consult Now</span>
-                </a>
-            </div>
-        </div>
-
-    </header>
-
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-container">
-            <div class="service-box">
-                <img src="images/image3.jpg" alt="Tax Experts">
-                <h3>Tax Filing Expert</h3>
-            </div>
-            <div class="service-box">
-                <img src="images/image4.jpg" alt="Tax Experts">
-                <h3>GST Registration & Filing</h3>
-            </div>
-            <div class="service-box">
-                <img src="images/image5.jpg" alt="Tax Experts">
-                <h3>TDS Correction & Return</h3>
-            </div>
-            <div class="service-box">
-                <img src="images/image13.jpg" alt="Tax Experts">
-                <h3>PF Activation & Withdrawal</h3>
-            </div>
-            <div class="service-box hidden">
-                <img src="images/image6.jpg" alt="Tax Experts">
-                <h3>ESI Payment</h3>
-            </div>
-            <div class="service-box hidden">
-                <img src="images/image7.jpg" alt="Tax Experts">
-                <h3>Company Formation & Registration</h3>
-            </div>
-            <div class="service-box hidden">
-                <img src="images/image8.jpg" alt="Tax Experts">
-                <h3>LLP Formation</h3>
-            </div>
-            <div class="service-box hidden">
-                <img src="images/image9.jpg" alt="Tax Experts">
-                <h3>Partnership Deed</h3>
-            </div>
-            <div class="service-box hidden">
-                <img src="images/image10.jpg" alt="Tax Experts">
-                <h3>Rent Agreement</h3>
-            </div>
-            <div class="service-box hidden">
-                <img src="images/image11.jpg" alt="Tax Experts">
-                <h3>MSME Registration</h3>
-            </div>
-            <div class="service-box hidden">
-                <img src="images/image12.jpg" alt="Tax Experts">
-                <h3>Accounting Management & Balance Sheet Finalization</h3>
-            </div>
-
-            <div class="service-box hidden">
-                <img src="images/image14.jpg" alt="Tax Experts">
-                <h3>All Types of Loans</h3>
-            </div>
-        </div>
-        <button id="show-more-btn">Show More Services</button>
-    </section>
-
-    <section id="why-choose-us" class="why-choose-us">
-        <div class="container">
-            <h2>Why Choose Us</h2>
-            <div class="reason-container">
-                <div class="reason-box">
-                    <i class="fa fa-star"></i>
-                    <h3>Experienced Consultants</h3>
-                    <p>Since 2018, our expert tax consultants have been helping individuals and businesses navigate
-                        complex tax landscapes with confidence.</p>
-                </div>
-                <div class="reason-box">
-                    <i class="fa fa-thumbs-up"></i>
-                    <h3>Customer Satisfaction</h3>
-                    <p>We prioritize client satisfaction, ensuring personalized service that exceeds expectations in
-                        every tax consultation.</p>
-                </div>
-                <div class="reason-box">
-                    <i class="fa fa-clock"></i>
-                    <h3>Timely Filing</h3>
-                    <p>We guarantee timely tax filings, ensuring you meet all deadlines without compromising on
-                        accuracy.</p>
-                </div>
-                <div class="reason-box">
-                    <i class="fa fa-cogs"></i>
-                    <h3>Expert Guidance</h3>
-                    <p>We leverage our extensive knowledge and experience to provide innovative tax strategies tailored
-                        to your specific needs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="faq" class="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-container">
-            <div class="faq-item">
-                <h3>How can an online tax consultant help me?</h3>
-                <p>Online tax consultants can assist you with tax preparation, planning, audit defense, notices, tax
-                    savings strategies, legal obligations, and more. Their expertise helps optimize your tax situation.
-                </p>
-            </div>
-            <div class="faq-item">
-                <h3>What types of tax services do online tax consultants offer?</h3>
-                <p>Online tax services include individual and business tax return filing, tax planning, audit
-                    representation, tax debt resolution, startup/investor planning, expatriate taxes, and other
-                    specialized offerings.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Can online tax consultants assist with tax audits?</h3>
-                <p>Yes, they can help you understand audit processes, gather documentation, communicate with tax
-                    authorities, and defend your tax positions during an audit.</p>
-            </div>
-            <div class="faq-item">
-                <h3>How do I get started with an online tax consultation?</h3>
-                <p>Getting started is easy - simply contact us via phone or email as provided on our website, or visit
-                    us directly at our office. Consultations can be conducted remotely via call or online video, or
-                    in-person at our office, based on your preference. Our team will assist you in scheduling a session
-                    with a tax consultant specializing in your area of need.</p>
-            </div>
-            <div class="faq-item">
-                <h3>How does D A S Tax Consultants ensure the security of my financial and personal information during
-                    online consultations?</h3>
-                <p>D A S Tax consultations are conducted through secure channels and encrypted platforms, giving you
-                    total peace of mind that your confidential data is protected.</p>
-            </div>
-            <div class="faq-item">
-                <h3>How do online tax consultation fees work?</h3>
-                <p>Fees vary based on the complexity of your tax needs and the duration of consultations. Most online
-                    tax consultants offer flexible pricing options including fixed rates, hourly rates, or package
-                    deals.</p>
-            </div>
-        </div>
-    </section>
-
-    <div class="quote-container">
-        <p>"Empowering your financial decisions with expert tax consultancy."</p>
-    </div>
-
-    <footer id="contact">
-        <div class="footer-container">
-            <div class="footer-box">
-                <h3>Contact</h3>
-                <p>A P Complex, 2nd Floor, Opposite Thriveni Super Market</p>
-                <p>New Bus Stand - Vatakara</p>
-                <p><i class="fas fa-phone"></i> (+91) 9497177510</p>
-                <p><i class="fas fa-envelope"></i> officialdastaxconsultants@gmail.com</p>
-                <div class="social-media">
+                <div class="right social-media">
+                    <p><b> FOLLOW US</b></p>
                     <a href="https://www.instagram.com/dastaxconsultants/" target="_blank" class="instagram-icon">
                         <i class="fab fa-instagram"></i>
                     </a>
@@ -233,12 +35,241 @@
                     </a>
                 </div>
             </div>
+
+            <div class="header-container">
+                <div class="logo">
+                    <img src="images/Logo.png" alt="DAS Tax Consultants">
+                </div>
+                <div class="header-main">
+                    <h1 class="modern">D A S Tax Consultants</h1>
+                </div>
+                <div class="hamburger-menu" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why-choose-us">Benefits</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="slider" data-aos="fade-up" data-aos-delay="300">
+                <div class="slide active-slide">
+                    <img src="images/image1.jpg" alt="Tax Consultancy">
+                    <div class="slide-text">
+                        <h2>Need Tax Consultant?</h2>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="images/image2.jpg" alt="Tax Experts">
+                    <div class="slide-text">
+                        <h2>Our Tax Experts are Here!</h2>
+                        <p>Don’t let a lack of knowledge result in a tax blunder.<br>
+                            Take control of your taxes with DAS Tax Consultancy Services.</p>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <div class="whatsapp-position">
+            <a href="https://wa.me/919497177510" class="whatsapp-icon" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span>Consult Now</span>
+            </a>
         </div>
-        <p class="copyright">&copy; 2024 D A S Tax Consultants All rights reserved.</p>
-    </footer>
+
+        <section id="services" class="services animate-on-load" data-aos="fade-up" data-aos-delay="500">
+            <h2>Our Services</h2>
+            <div class="service-container">
+                <div class="service-box" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/image3.jpg" alt="Tax Experts">
+                    <h3>Tax Filing Expert</h3>
+                </div>
+                <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/image4.jpg" alt="Tax Experts">
+                    <h3>GST Registration & Filing</h3>
+                </div>
+                <div class="service-box" data-aos="fade-up" data-aos-delay="300">
+                    <img src="images/image5.jpg" alt="Tax Experts">
+                    <h3>TDS Correction & Return</h3>
+                </div>
+                <div class="service-box" data-aos="fade-up" data-aos-delay="400">
+                    <img src="images/image13.jpg" alt="Tax Experts">
+                    <h3>PF Activation & Withdrawal</h3>
+                </div>
+                <div class="service-box hidden" data-aos="fade-up" data-aos-delay="500">
+                    <img src="images/image6.jpg" alt="Tax Experts">
+                    <h3>ESI Payment</h3>
+                </div>
+                <div class="service-box hidden" data-aos="fade-up" data-aos-delay="600">
+                    <img src="images/image7.jpg" alt="Tax Experts">
+                    <h3>Company Formation & Registration</h3>
+                </div>
+                <div class="service-box hidden" data-aos="fade-up" data-aos-delay="700">
+                    <img src="images/image8.jpg" alt="Tax Experts">
+                    <h3>LLP Formation</h3>
+                </div>
+                <div class="service-box hidden" data-aos="fade-up" data-aos-delay="800">
+                    <img src="images/image9.jpg" alt="Tax Experts">
+                    <h3>Partnership Deed</h3>
+                </div>
+                <div class="service-box hidden" data-aos="fade-up" data-aos-delay="900">
+                    <img src="images/image10.jpg" alt="Tax Experts">
+                    <h3>Rent Agreement</h3>
+                </div>
+                <div class="service-box hidden" data-aos="fade-up" data-aos-delay="1000">
+                    <img src="images/image11.jpg" alt="Tax Experts">
+                    <h3>MSME Registration</h3>
+                </div>
+                <div class="service-box hidden" data-aos="fade-up" data-aos-delay="1100">
+                    <img src="images/image12.jpg" alt="Tax Experts">
+                    <h3>Accounting Management & Balance Sheet Finalization</h3>
+                </div>
+                <div class="service-box hidden" data-aos="fade-up" data-aos-delay="1200">
+                    <img src="images/image14.jpg" alt="Tax Experts">
+                    <h3>All Types of Loans</h3>
+                </div>
+            </div>
+            <button id="show-more-btn" data-aos="fade-up" data-aos-delay="1300">Show More Services</button>
+        </section>
+
+        <section id="why-choose-us" class="why-choose-us animate-on-load" data-aos="fade-up" data-aos-delay="1500">
+            <div class="container">
+                <h2>Why Choose Us</h2>
+                <div class="reason-container">
+                    <div class="reason-box" data-aos="fade-up" data-aos-delay="1550">
+                        <i class="fa fa-star"></i>
+                        <h3>Experienced Consultants</h3>
+                        <p>Since 2018, our expert tax consultants have been helping individuals and businesses navigate
+                            complex tax landscapes with confidence.</p>
+                    </div>
+                    <div class="reason-box" data-aos="fade-up" data-aos-delay="1600">
+                        <i class="fa fa-thumbs-up"></i>
+                        <h3>Customer Satisfaction</h3>
+                        <p>We prioritize client satisfaction, ensuring personalized service that exceeds expectations in
+                            every tax consultation.</p>
+                    </div>
+                    <div class="reason-box" data-aos="fade-up" data-aos-delay="1650">
+                        <i class="fa fa-clock"></i>
+                        <h3>Timely Filing</h3>
+                        <p>We guarantee timely tax filings, ensuring you meet all deadlines without compromising on
+                            accuracy.</p>
+                    </div>
+                    <div class="reason-box" data-aos="fade-up" data-aos-delay="1700">
+                        <i class="fa fa-cogs"></i>
+                        <h3>Expert Guidance</h3>
+                        <p>We leverage our extensive knowledge and experience to provide innovative tax strategies
+                            tailored
+                            to your specific needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq animate-on-load" data-aos="fade-up" data-aos-delay="1750">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="1800">
+                    <h3>How can an online tax consultant help me?</h3>
+                    <p>Online tax consultants can assist you with tax preparation, planning, audit defense, notices, tax
+                        savings strategies, legal obligations, and more. Their expertise helps optimize your tax
+                        situation.
+                    </p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="1850">
+                    <h3>What types of tax services do online tax consultants offer?</h3>
+                    <p>Online tax services include individual and business tax return filing, tax planning, audit
+                        representation, tax debt resolution, startup/investor planning, expatriate taxes, and other
+                        specialized offerings.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="1900">
+                    <h3>Can online tax consultants assist with tax audits?</h3>
+                    <p>Yes, they can help you understand audit processes, gather documentation, communicate with tax
+                        authorities, and defend your tax positions during an audit.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="1950">
+                    <h3>How do I get started with an online tax consultation?</h3>
+                    <p>Getting started is easy - simply contact us via phone or email as provided on our website, or
+                        visit
+                        us directly at our office. Consultations can be conducted remotely via call or online video, or
+                        in-person at our office, based on your preference. Our team will assist you in scheduling a
+                        session
+                        with a tax consultant specializing in your area of need.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="2000">
+                    <h3>How does D A S Tax Consultants ensure the security of my financial and personal information
+                        during
+                        online consultations?</h3>
+                    <p>D A S Tax consultations are conducted through secure channels and encrypted platforms, giving you
+                        total peace of mind that your confidential data is protected.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="2050">
+                    <h3>How do online tax consultation fees work?</h3>
+                    <p>Fees vary based on the complexity of your tax needs and the duration of consultations. Most
+                        online
+                        tax consultants offer flexible pricing options including fixed rates, hourly rates, or package
+                        deals.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="quote-container animate-on-load" data-aos="fade-up" data-aos-delay="2100">
+            <p>"Empowering your financial decisions with expert tax consultancy."</p>
+        </div>
+
+        <footer id="contact" class="footer" data-aos="fade-up" data-aos-delay="2150">
+            <div class="footer-container">
+                <div class="footer-section company-info" data-aos="fade-up" data-aos-delay="2200">
+                    <h3 class="modern">D A S Tax Consultants</h3>
+                    <p>
+                        D A S Tax Consultants has been providing expert tax solutions since 2018, helping individuals
+                        and businesses navigate complex tax landscapes with ease and confidence.
+                    </p>
+                </div>
+
+                <div class="footer-section contact-us" data-aos="fade-up" data-aos-delay="2250">
+                    <h3>Contact Us</h3>
+                    <div class="contact-details">
+                        <p> A P Complex, 2nd Floor, Opposite Triveni Super Market, New Bus Stand - Vatakara</p>
+                        <p><i class="fas fa-envelope"></i> officialdastaxconsultants@gmail.com</p>
+                        <p><i class="fas fa-phone-alt"></i> (+91) 9497177510</p>
+                    </div>
+                </div>
+
+                <div class="footer-section connect-us" data-aos="fade-up" data-aos-delay="2300">
+                    <h3>Connect with Us</h3>
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/dastaxconsultants/" target="_blank" class="instagram-icon"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/das-tax-consultants/" target="_blank" class="linkedin-icon"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 D A S Tax Consultants. All rights reserved.</p>
+        </footer>
 
 
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false,
+            anchorPlacement: 'top-bottom',
+        });
         let slideIndex = 0;
         const slides = document.querySelectorAll('.slide');
         const showMoreBtn = document.getElementById('show-more-btn');
@@ -299,6 +330,14 @@
                 icon.classList.remove('fa-times');
                 icon.classList.add('fa-bars');
             });
+        });
+
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
+            preloader.classList.add('fade-out');
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
         });
     </script>
 </body>
