@@ -677,7 +677,7 @@ footer .social-media a i {
         right: 2%;
         width: 12%;
         display: none;
-        padding: 6px 12px;
+        padding: 6px 10px;
         z-index: 999;
         border-radius: 5px;
     }
@@ -782,7 +782,7 @@ footer .social-media a i {
         display: none;
         top: 36%;
         right: 4%;
-        width: 8%;
+        width: 12%;
         padding: 4px 6px;
     }
 
