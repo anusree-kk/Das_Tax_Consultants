@@ -764,7 +764,7 @@ footer .social-media a i {
 @media (max-width: 425px) {
     .nav-links {
         display: none;
-        top: 18%;
+        top: 36%;
         right: 4%;
         width: 14%;
         padding: 6px 6px;
