@@ -675,9 +675,9 @@ footer .social-media a i {
         position: absolute;
         top: 44%;
         right: 2%;
-        width: 18%;
+        width: 12%;
         display: none;
-        padding: 8px 14px;
+        padding: 6px 12px;
         z-index: 999;
         border-radius: 5px;
     }
@@ -782,8 +782,8 @@ footer .social-media a i {
         display: none;
         top: 36%;
         right: 4%;
-        width: 18%;
-        padding: 4px 10px;
+        width: 10%;
+        padding: 4px 8px;
     }
 
     .nav-links ul li a {
