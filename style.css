@@ -649,6 +649,10 @@ footer .social-media a i {
         display: none;
     }
 
+    .header-top .center {
+        text-align: right;
+    }
+
     .header-container {
         flex-direction: column;
         align-items: center;
@@ -660,7 +664,7 @@ footer .social-media a i {
     }
 
     .header-main h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .hamburger-menu i {
@@ -669,11 +673,11 @@ footer .social-media a i {
 
     .nav-links {
         position: absolute;
-        top: 37%;
+        top: 44%;
         right: 2%;
-        width: 17%;
+        width: 22%;
         display: none;
-        padding: 10px 20px;
+        padding: 8px 16px;
         z-index: 999;
         border-radius: 5px;
     }
@@ -691,21 +695,33 @@ footer .social-media a i {
         margin: 10px 0;
     }
 
+    .nav-links ul li a {
+        font-size: 1.0rem;
+    }
+
     .slider {
         height: 300px;
     }
 
+    .slide-text {
+        padding: 5px 20px;
+    }
+
     .slide-text h2 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .slide-text p {
-        font-size: 1rem;
+        display: none;
     }
 
     .service-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .services h2 {
+        font-size: 2.0rem;
     }
 
     .service-box {
@@ -714,7 +730,7 @@ footer .social-media a i {
     }
 
     .reason-box {
-        width: 45%;
+        width: 75%;
     }
 
     .faq h2 {
@@ -722,7 +738,7 @@ footer .social-media a i {
     }
 
     .faq-item h3 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .faq-item p {
@@ -766,7 +782,7 @@ footer .social-media a i {
         display: none;
         top: 36%;
         right: 4%;
-        width: 14%;
+        width: 20%;
         padding: 6px 6px;
     }
 
