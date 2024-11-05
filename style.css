@@ -680,8 +680,8 @@ footer .social-media a i {
         padding: 15px 10px;
         z-index: 999;
         border-radius: 5px;
-        background-color: #fff; /* Ensure background for readability */
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a light shadow */
+        background-color: #fff; 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
     }
 
     .nav-links.active {
@@ -691,16 +691,16 @@ footer .social-media a i {
     .nav-links ul {
         display: flex;
         flex-direction: column;
-        align-items: flex-end; /* Aligns items to the right */
+        align-items: flex-end;
     }
 
     .nav-links ul li {
-        margin: 12px 0; /* Add consistent space */
+        margin: 12px 0; 
     }
 
     .nav-links ul li a {
-        font-size: 1rem; /* Slightly bigger for better readability */
-        color: #333; /* Contrast color */
+        font-size: 1rem; 
+        color: #333;
         text-decoration: none;
     }
 
@@ -793,9 +793,9 @@ footer .social-media a i {
         width: 22%;
         padding: 12px;
         display: none;
-        background-color: #fff; /* Ensure background for visibility */
+        background-color: #fff;
         border-radius: 8px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a light shadow */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .nav-links.active {
@@ -805,21 +805,21 @@ footer .social-media a i {
     .nav-links ul {
         display: flex;
         flex-direction: column;
-        align-items: flex-end; /* Aligns items to the right */
+        align-items: flex-end; 
     }
 
     .nav-links ul li {
-        margin: 10px 0; /* Provide more space between links */
+        margin: 10px 0; 
     }
 
     .nav-links ul li a {
-        font-size: 0.9rem; /* Slightly larger font for readability */
+        font-size: 0.9rem; 
         color: #333;
         text-decoration: none;
     }
 
     .nav-links ul li a:hover {
-        color: #007bff; /* Add hover effect for links */
+        color: #007bff;
     }
 
     .services h2,
